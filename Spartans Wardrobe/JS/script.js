@@ -163,4 +163,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+        // Checkout button (placeholder)
+    document.getElementById('checkoutBtn').addEventListener('click', () => {
+        if (cart.length > 0) {
+            alert('Proceeding to checkout with total: LKR ' + document.getElementById('cartTotal').textContent.split(' ')[1]);
+            cart = []; // Clear cart after checkout (for demo)
+            updateCart();
+            document.getElementById('cartModal').style.display = 'none';
+        } else {
+            alert('Your cart is empty!');
+        }
+    });
+
     });
