@@ -74,5 +74,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+        // Smooth scroll for nav links
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const target = document.querySelector(link.getAttribute('href'));
+            target.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    // Shop Now button scrolls to T-Shirts
+    document.querySelector('.shop-now').addEventListener('click', () => {
+        document.getElementById('tshirts').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Product image hover effect -have to add more images
+    const productImgs = document.querySelectorAll('.product img');
+    productImgs.forEach(img => {
+        img.addEventListener('mouseenter', () => {
+            img.style.transform = 'scale(1.05)';
+        });
+        img.addEventListener('mouseleave', () => {
+            img.style.transform = 'scale(1)';
+        });
+    });
+
+
 
     });
