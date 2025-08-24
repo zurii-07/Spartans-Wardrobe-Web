@@ -100,6 +100,67 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+        // Add to cart buttons - open product modal
+    const addBtns = document.querySelectorAll('.add-btn');
+    const productModal = document.getElementById('productModal');
+    let currentProduct;
+    addBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const id = parseInt(btn.parentElement.dataset.id);
+            currentProduct = products.find(p => p.id === id);
+            document.getElementById('modalImage').src = currentProduct.images[0].replace(/\\/g, '/');
+            document.getElementById('modalName').textContent = currentProduct.name;
+            document.getElementById('modalPrice').textContent = `Total: LKR ${currentProduct.price.toFixed(2)}`;
+            document.getElementById('modalDesc').textContent = currentProduct.desc;
+            document.getElementById('modalSize').value = 'M'; // Default
+            document.getElementById('modalQty').value = 1;
+            productModal.style.display = 'flex';
+        });
+    });
 
+    // Add to cart from modal
+    document.getElementById('addToCartBtn').addEventListener('click', () => {
+        const size = document.getElementById('modalSize').value;
+        const qty = parseInt(document.getElementById('modalQty').value);
+        if (qty > 0) {
+            const existingItem = cart.find(item => item.id === currentProduct.id && item.size === size);
+            if (existingItem) {
+                existingItem.qty += qty;
+            } else {
+                cart.push({ id: currentProduct.id, name: currentProduct.name, price: currentProduct.price, size, qty });
+            }
+            updateCart();
+            productModal.style.display = 'none';
+            alert(`${qty} ${currentProduct.name} (Size: ${size}) added to cart!`);
+        } else {
+            alert('Quantity must be at least 1.');
+        }
+    });
+
+    // Update cart badge and total
+    function updateCart() {
+        const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+        document.getElementById('cartBadge').textContent = totalItems;
+        const cartItemsDiv = document.getElementById('cartItems');
+        cartItemsDiv.innerHTML = '';
+        let total = 0;
+        cart.forEach(item => {
+            const itemDiv = document.createElement('div');
+            itemDiv.textContent = `${item.name} (Size: ${item.size}) x ${item.qty} = LKR ${(item.price * item.qty).toFixed(2)}`;
+            cartItemsDiv.appendChild(itemDiv);
+            total += item.price * item.qty;
+        });
+        document.getElementById('cartTotal').textContent = `Total: LKR ${total.toFixed(2)}`;
+    }
+
+    // Show cart modal
+    document.querySelector('.cart-icon').addEventListener('click', () => {
+        if (cart.length > 0) {
+            updateCart();
+            document.getElementById('cartModal').style.display = 'flex';
+        } else {
+            alert('Your cart is empty!');
+        }
+    });
 
     });
