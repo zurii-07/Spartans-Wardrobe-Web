@@ -20,4 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 16, name: 'Heavyweight Hoodie', price: 7900, desc: 'Premium heavyweight hoodie built to last.', images: ['Spartans Wardrobe\\IMAGES\\H-8.jpeg'] }
     ];
 
+        // Cart array
+    let cart = [];
+
+    // Show email modal on load
+    const emailModal = document.getElementById('emailModal');
+    emailModal.style.display = 'flex';
+
+    // Close modals
+    const closes = document.querySelectorAll('.close');
+    closes.forEach(close => {
+        close.addEventListener('click', () => {
+            close.parentElement.parentElement.style.display = 'none';
+        });
+    });
+
     });
