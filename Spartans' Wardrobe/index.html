@@ -20,4 +20,30 @@
             </form>
         </div>
     </div>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Product Image">
+            <h2 id="modalName"></h2>
+            <p id="modalPrice"></p>
+            <p id="modalDesc"></p>
+            <div class="modal-options">
+                <label for="modalSize">Size:</label>
+                <select id="modalSize">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+            <div class="modal-options">
+                <label for="modalQty">Quantity:</label>
+                <input type="number" id="modalQty" min="1" value="1">
+            </div>
+            <button id="addToCartBtn">Add to Cart</button>
+        </div>
+    </div>
+    
 </body>
