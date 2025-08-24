@@ -35,4 +35,44 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Email form validation and submit
+    document.getElementById('emailForm').addEventListener('submit', e => {
+        e.preventDefault();
+        const email = document.getElementById('subscribeEmail').value;
+        if (email && /\S+@\S+\.\S+/.test(email)) {
+            alert('Subscribed successfully! You can now browse.');
+            emailModal.style.display = 'none';
+        } else {
+            alert('Please enter a valid email address.');
+        }
+    });
+
+    // Footer newsletter validation
+    document.getElementById('footerNewsletter').addEventListener('submit', e => {
+        e.preventDefault();
+        const email = e.target[0].value;
+        if (email && /\S+@\S+\.\S+/.test(email)) {
+            alert('Subscribed successfully!');
+            e.target[0].value = '';
+        } else {
+            alert('Please enter a valid email address.');
+        }
+    });
+
+    // Contact form validation
+    document.getElementById('contactForm').addEventListener('submit', e => {
+        e.preventDefault();
+        const name = e.target[0].value;
+        const email = e.target[1].value;
+        const subject = e.target[2].value;
+        const message = e.target[3].value;
+        if (name && email && /\S+@\S+\.\S+/.test(email) && subject && message) {
+            alert('Message sent successfully! We will get back to you soon.');
+            e.target.reset();
+        } else {
+            alert('Please fill all fields correctly.');
+        }
+    });
+
+
     });
