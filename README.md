@@ -88,25 +88,25 @@ spartans-wardrobe/
 ## Acknowledgments
 
 - Inspired by the warrior spirit of ancient Spartans.
-- Built by Surakkitha Galappaththi as a personal project. (surskkithag@gmail.com)
+- Built by Surakkitha Galappaththi as a personal project. (surakkithag@gmail.com)
 - Thanks to online resources for CSS Grid and JavaScript ES6 tutorials.
 
 ## Screenshots
 
 ### Home
-![Home](IMAGES/1%20Home.png)
+![Home](IMAGES/1 Home.png)
 
 ### T-Shirt Section
-![Tshirt](IMAGES/2%20T-Shirt.png)
+![Tshirt](IMAGES/2 T-Shirt.png)
 
 ### Hoodie Section
-![Hoodie](IMAGES/3%20Hoodies.png)
+![Hoodie](IMAGES/3 Hoodies.png)
 
 ### About Us
-![About](IMAGES/4%20About.png)
+![About](IMAGES/4 About.png)
 
 ### Contact Us
-![Contact](IMAGES/5%20Contact%20Us.png)
+![Contact](IMAGES/5 Contact Us.png)
 
 ### Footer
-![Footer](IMAGES/5%20Footer.png)
+![Footer](IMAGES/5 Footer.png)
