@@ -94,19 +94,19 @@ spartans-wardrobe/
 ## Screenshots
 
 ### Home
-![Home](Spartans-Wardrobe-Web\Spartans Wardrobe\IMAGES\1_Home.png) 
+![Home](Spartans Wardrobe\IMAGES\1_Home.png) 
 
 ### T-Shirt Section
-![Tshirt](Spartans-Wardrobe-Web\Spartans Wardrobe\IMAGES\2_T-Shirt.png) 
+![Tshirt](Spartans Wardrobe\IMAGES\2_T-Shirt.png) 
 
 ### Hoodie Section
-![Hoodie](Spartans-Wardrobe-Web\Spartans Wardrobe\IMAGES\3_Hoodies.png)
+![Hoodie](Spartans Wardrobe\IMAGES\3_Hoodies.png)
 
 ### About Us
-![About](Spartans-Wardrobe-Web\Spartans Wardrobe\IMAGES\4_About.png)
+![About](Spartans Wardrobe\IMAGES\4_About.png)
 
 ### Contact Us
-![Contact](Spartans-Wardrobe-Web\Spartans Wardrobe\IMAGES\5_Contact.png)
+![Contact](Spartans Wardrobe\IMAGES\5_Contact.png)
 
 ### Footer
-![Footer](Spartans-Wardrobe-Web\Spartans Wardrobe\IMAGES\5_Footer.png)
+![Footer](Spartans Wardrobe\IMAGES\5_Footer.png)
