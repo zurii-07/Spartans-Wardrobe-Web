@@ -380,6 +380,7 @@ nav ul li a:hover {
     height: 20px;
 }
 
+/*Contact form styles*/
 .contact-form h3 {
     font-size: 24px;
     margin-bottom: 15px;
@@ -429,7 +430,7 @@ footer {
     font-size: 20px;
     margin-bottom: 10px;
 }
-
+/*Quick access links footer styles*/
 .quick-links h4, .newsletter h4, .contact-info-footer h4 {
     font-size: 18px;
     margin-bottom: 10px;
@@ -454,6 +455,7 @@ footer {
     color: #add8e6;
 }
 
+/* newsletter subscription styles */
 .newsletter p {
     margin-bottom: 10px;
 }
@@ -475,6 +477,7 @@ footer {
     padding: 10px 15px;
 }
 
+/*Contact info footer styles*/
 .contact-info-footer p {
     display: flex;
     align-items: center;
@@ -487,6 +490,7 @@ footer {
     height: 20px;
 }
 
+/*Copyright footer styles*/
 .copyright {
     text-align: center;
     font-size: 14px;
@@ -494,4 +498,51 @@ footer {
 }
 
 
+/* Size Chart Styles */
+.size-chart {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
 
+.size-chart th,
+.size-chart td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.size-chart th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.size-chart td {
+    color: #333;
+}
+
+.size-chart tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.size-chart tr:hover {
+    background-color: #e0f7fa;
+    transition: background-color 0.3s;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .size-chart {
+        width: 95%;
+        font-size: 14px;
+    }
+    .size-chart th,
+    .size-chart td {
+        padding: 8px;
+    }
+}
