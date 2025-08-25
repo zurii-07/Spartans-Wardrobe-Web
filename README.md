@@ -94,19 +94,19 @@ spartans-wardrobe/
 ## Screenshots
 
 ### Home
-![Home](IMAGES/1 Home.png)
+![Home](IMAGES/1_Home.png)
 
 ### T-Shirt Section
-![Tshirt](IMAGES/2 T-Shirt.png)
+![Tshirt](IMAGES/2_T-Shirt.png)
 
 ### Hoodie Section
-![Hoodie](IMAGES/3 Hoodies.png)
+![Hoodie](IMAGES/3_Hoodies.png)
 
 ### About Us
-![About](IMAGES/4 About.png)
+![About](IMAGES/4_About.png)
 
 ### Contact Us
-![Contact](IMAGES/5 Contact Us.png)
+![Contact](IMAGES/5_Contact.png)
 
 ### Footer
-![Footer](IMAGES/5 Footer.png)
+![Footer](IMAGES/5_Footer.png)
